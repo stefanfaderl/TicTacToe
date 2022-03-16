@@ -7,22 +7,22 @@
 
 html,
 body {
-  background-color: dimgray;
+  background-color: #1b402e;
   height: 100%;
 }
 
 h1 {
   padding: 25px 0px 0px 20px;
   text-align: center;
-  color: lightgoldenrodyellow;
+  color: #0367a6;
   font-size: 2.8rem;
 }
 
 /* grid container */
 .board-size {
-  background-color: greenyellow;
   display: -ms-grid;
   display: grid;
+  background-color: #038c5a;
   margin: 0 auto;
   margin-top: 40px;
   padding: 10px;
@@ -34,8 +34,9 @@ h1 {
 }
 
 .board-size [class^="field-"] {
-  border: solid 1.2px;
-  background-color: burlywood;
+  border: solid 3px;
+  border-color: #04d94f;
+  background-color: #04bf68;
 }
 
 .field-1 {
@@ -90,5 +91,11 @@ h1 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: nine;
+}
+
+@media (min-width: 1000px) {
+  .board-size {
+    max-width: 40%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -29,8 +29,8 @@ export class Board {
     const main = document.querySelector("main");
     const newDiv = document.createElement("div");
     newDiv.classList.add("board-size");
-    newDiv.style.width = `${boardSize.x}px`;
-    newDiv.style.height = `${boardSize.y}px`;
+    newDiv.style.width = `${boardSize.x}%`;
+    newDiv.style.height = `${boardSize.y}vh`;
     //newDiv.textContent = "Seas";
     main.append(newDiv);
 
