@@ -1,0 +1,19 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: dimgray;
+}
+
+h1 {
+  text-align: center;
+  color: lightgoldenrodyellow;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=style.css.map */
