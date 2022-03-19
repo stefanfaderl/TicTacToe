@@ -9,13 +9,15 @@ export class Players {
     const boardSize = document.querySelector(".board-size");
     const section = document.createElement("section");
     section.classList.add("score-container");
-    const pTag = document.createElement("p");
-    const pTag2 = document.createElement("p");
+    const pTagX = document.createElement("p");
+    pTagX.classList.add("p-x");
+    const pTagO = document.createElement("p");
+    pTagO.classList.add("p-o");
 
     boardSize.after(section);
-    section.appendChild(pTag);
-    section.appendChild(pTag2);
-    pTag.textContent = "Points " + this.p1.playername + " :";
-    pTag2.textContent = "Points " + this.p2.playername + " :";
+    section.appendChild(pTagX);
+    section.appendChild(pTagO);
+    pTagX.textContent = "Points " + this.p1.playername + ": 0";
+    pTagO.textContent = "Points " + this.p2.playername + ": 0";
   }
 }

@@ -65,6 +65,9 @@ section {
     border: solid 3px;
     border-color: #04d94f;
     background-color: #04bf68;
+    &:not(.x-image):not(.o-image):hover {
+      background-color: lightgray;
+    }
   }
 }
 

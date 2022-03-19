@@ -76,6 +76,10 @@ section .btn-start-game {
   background-color: #04bf68;
 }
 
+.board-size [class^="field-"]:not(.x-image):not(.o-image):hover {
+  background-color: lightgray;
+}
+
 .o-image {
   background-image: url("../img/o.png");
   background-size: contain;
