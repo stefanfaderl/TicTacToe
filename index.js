@@ -58,12 +58,14 @@ const WINNING_COMBINATIONS = [
 function handleClick(e) {
   // console.log("clicked");
   const cell = e.target;
-  let audio = new Audio('clickSound.wav');
+  let audio = new Audio("sound/clickSound.wav");
   audio.play();
   const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS; // if it´s circles turn than return circle class else return the x class
   placeMark(cell, currentClass);
   if (checkWin(currentClass)) {
-    console.log("WINNER"); 
+    let audio2 = new Audio("sound/winning.mp3");
+    audio2.play();
+    console.log("WINNER");
     endGame(false);
   } else if (isDraw()) {
     endGame(true);
