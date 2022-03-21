@@ -22,8 +22,6 @@ export class Board {
   }
 
   drawBoard(boardSize) {
-    console.log(boardSize.x);
-    console.log(boardSize.y);
     const main = document.querySelector("main");
     const newDiv = document.createElement("div");
     newDiv.classList.add("board-size");
@@ -36,7 +34,6 @@ export class Board {
 
 function printFields() {
   const newDiv = document.querySelector(".board-size");
-  // noch mit anderen for loops probieren
   for (let i = 1; i < 10; i++) {
     const fields = document.createElement("div");
     fields.classList.add(`field-${i}`);

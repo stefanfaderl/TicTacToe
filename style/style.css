@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@600&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@600&family=Roboto:wght@300&family=Ubuntu&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,16 +14,18 @@ body {
 }
 
 h1 {
-  padding: 25px 0px 0px 20px;
+  font-family: "Roboto Mono", monospace;
   text-align: center;
-  color: #0367a6;
-  font-size: 2.8rem;
+  color: #008be2;
+  font-size: 3rem;
+  padding: 20px 0px;
 }
 
 p {
+  font-family: "Ubuntu", sans-serif;
   margin: 10px;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -31,8 +35,7 @@ section {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 10px;
-  padding: 20px;
+  margin-top: 25px;
 }
 
 section .btn-start-game {
@@ -43,6 +46,8 @@ section .btn-start-game {
   border-radius: 0.3rem;
   border: none;
   font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
 }
 
 .score-container {
@@ -61,7 +66,6 @@ section .btn-start-game {
   display: grid;
   background-color: #038c5a;
   margin: 0 auto;
-  margin-top: 40px;
   padding: 10px;
   gap: 10px;
   -ms-grid-column-align: center;
