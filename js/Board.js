@@ -32,11 +32,11 @@ export class Board {
   }
 }
 
-function printFields() {
+let printFields = () => {
   const newDiv = document.querySelector(".board-size");
   for (let i = 1; i < 10; i++) {
     const fields = document.createElement("div");
     fields.classList.add(`field-${i}`);
     newDiv.appendChild(fields);
   }
-}
+};
