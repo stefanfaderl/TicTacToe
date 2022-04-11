@@ -1,3 +1,4 @@
+"use strict";
 export class Board {
   constructor(x, y) {
     this.x = x;
