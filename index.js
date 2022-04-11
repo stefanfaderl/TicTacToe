@@ -1,9 +1,12 @@
+"use strict";
 import { Board } from "./js/Board.js";
 import { Players } from "./js/Players.js";
 
 let player1 = new Players("X");
 let player2 = new Players("O");
 let circleTurn;
+const winningAudio = new Audio("sound/winning.mp3");
+const drawAudio = new Audio("sound/draw-sound.mp3");
 const X_CLASS = "x-image";
 const CIRCLE_CLASS = "o-image";
 const h1 = document.querySelector("h1");
@@ -42,11 +45,9 @@ let handleClick = (e) => {
   const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS; // if it´s circles turn than return circle class else return the x class
   placeMark(cell, currentClass);
   if (checkWin(currentClass)) {
-    let winningAudio = new Audio("sound/winning.mp3");
     winningAudio.play();
     endGame(false);
   } else if (isDraw()) {
-    let drawAudio = new Audio("sound/draw-sound.mp3");
     drawAudio.play();
     endGame(true);
   } else {

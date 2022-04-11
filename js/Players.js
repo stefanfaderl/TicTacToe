@@ -1,3 +1,4 @@
+"use strict";
 export class Players {
   constructor(playername) {
     this.playername = playername;
